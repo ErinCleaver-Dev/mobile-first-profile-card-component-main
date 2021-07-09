@@ -1,6 +1,12 @@
 * {
     padding: 0;
     margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
 }
 
 
@@ -10,13 +16,17 @@ main.main_container {
     height: 100vh;
     overflow: hidden;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 img.top_image {
     width: 100%;
     position: absolute;
     margin-left: -25%;
-    margin-top: -50%;
+    margin-top: -150%;
 }
 
 img.buttom_image {
@@ -25,3 +35,11 @@ img.buttom_image {
     margin-top: 115%;
 }
 
+.card {
+    background-color: white;
+    max-width: 400px;
+    width: 90%;
+    border-radius: 25px;
+    padding: 10px;
+    z-index: 2;
+}
